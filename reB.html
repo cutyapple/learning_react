@@ -14,16 +14,23 @@
     <div id="container"></div>
 
     <script type="text/babel">
-        var destination = document.querySelector('#container');
+        var HelloWorld = React.createClass({
+            render: function(){
+                return(
+                    <p>Hello, World!</p>
+                );
+            }
+        });
 
         ReactDOM.render(
             <div>
-                <h1>Cu</h1>
-                <h1>Ty</h1>
-                <h1>Ap</h1>
-                <h1>ple</h1>
+                <HelloWorld />
+                <HelloWorld />
+                <HelloWorld />
+                <HelloWorld />
+                <HelloWorld />
             </div>,
-             destination
+            document.querySelector("#container")
         );
     </script>
 </body>
