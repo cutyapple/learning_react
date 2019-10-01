@@ -17,18 +17,18 @@
         var HelloWorld = React.createClass({
             render: function(){
                 return(
-                    <p>Hello, World!</p>
+                    <p>Hello, {this.props.greetTarget}!</p>
                 );
             }
         });
 
         ReactDOM.render(
             <div>
-                <HelloWorld />
-                <HelloWorld />
-                <HelloWorld />
-                <HelloWorld />
-                <HelloWorld />
+                <HelloWorld greetTarget="Cuty"/>
+                <HelloWorld greetTarget="Apple"/>
+                <HelloWorld greetTarget="DSM"/>
+                <HelloWorld greetTarget="DMI"/>
+                <HelloWorld greetTarget="421"/>
             </div>,
             document.querySelector("#container")
         );
